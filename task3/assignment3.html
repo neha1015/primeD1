@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3|Form</title>
+    
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="assign3submit.html" method="GET">
+        <label for="">Name:<input type="text" required></label>
+        <br><br>
+        <label for="">Email:<input type="email"></label><br>
+        <br>
+        <label for="">Password:<input type="password"></label><br>
+        <br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+
+        <label for="">Hobbies:</label><br>
+            <input type="checkbox">Reading <br>
+            <input type="checkbox">Travelling <br>
+            <input type="checkbox">Cooking <br>  
+            <input type="checkbox">Sports <br>
+
+            <br>
+            <label for="">City:</label>
+            <select>
+                <option value="">Select your city</option>
+                <option value="">Mumbai</option>
+                <option value="">Delhi</option>
+                <option value="">Chennai</option>
+                <option value="">Pune</option>
+                <option value="">Hyderbad</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="">Date of birth:</label><input type="date"><br>
+            <br>
+            <label for="">Phone Number:</label><input type="tel" placeholder="10-digit number" pattern="[0-9]{10}"><br>
+            <br>
+            <label for="">Address:</label><br>
+            <textarea  placeholder="Enter your address" rows="4" cols="30"></textarea>
+
+            <br><br>
+            <button type="submit">Submit</button>
+    </form>
+
+   
+</body>
+</html>
