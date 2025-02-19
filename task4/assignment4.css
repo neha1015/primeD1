@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #172a67;
+  padding: 25px 40px;
+  gap: 40px;
+}
+.button {
+  display: flex;
+  gap: 20px;
+  padding-right: 50px;
+}
+.btn {
+  background: rgb(226, 229, 232);
+  border: 2px solid gray;
+  padding: 10px 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: rgb(233, 224, 224);
+  border-color: #007bff;
+  border-radius: 0%;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.search-container input {
+  width: 510px;
+  height: 45px;
+  border: none;
+  border-radius: 10vh;
+  font-size: 20px;
+}
+.search {
+  border: 2px;
+  background-color: white;
+  border-radius: 20vh;
+  display: flex;
+  justify-content: center;
+}
+.fa-magnifying-glass {
+  position: relative;
+  size: 20px;
+  right: 40vh;
+  align-content: center;
+}
+.fa-star {
+  position: relative;
+  align-content: center;
+}
+
+.s-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+  cursor: pointer;
+}
+.profile-icon {
+  min-width: 40px;
+  min-height: 40px;
+  background-color: teal;
+  border-radius: 50%;
+  border: 2px solid orange;
+}
+.profile-icon:hover {
+  border-style: dashed;
+  transition: border-width 0.6s linear;
+  border-width: 5px;
+  transition: 0.2s;
+}
+@media (max-width: 786px) {
+  .search-container {
+    width: 30px;
+  }
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .fa-star {
+    position: relative;
+    align-content: center;
+  }
+  .fa-magnifying-glass {
+    position: relative;
+    size: 20px;
+    right: 40vh;
+    align-content: center;
+  }
+}
