@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./project.css">
+</head>
+<body>
+    <header>
+        <i class="fa-brands fa-youtube fa-2xl" style="color: #f30e0e; margin-left: 20px;"></i>
+        <h1 style="color: white; padding-right: 550px;" >YouTube<sup style="color: gray;">IN</sup></h1>
+       
+
+        <input type="text" class="search-bar" name="search-text" placeholder="Search Here.." onchange="handleSearch(event)"><button>Search</button>
+        <i class="fa-solid fa-microphone fa-xl" style="color: #ededed;"></i>
+
+        <i class="fa-solid fa-bell fa-xl" style="color: #ebeef4; padding-left: 350px;"></i>
+    </header>
+
+    <aside style="padding:2rem;" >
+
+        <div class="home-bar">
+            <a href="./home.html">
+                <i class="fa-solid fa-house" style="color: #eceff3; "></i>
+                <span style="color: beige;">Home</span>
+                <br>
+            </a>
+    
+            <a href="./subscriptions.html">
+                <i class="fa-brands fa-square-youtube" style="color: #eef1f6;"></i>
+                <span style="color: beige;">Subscriptions</span>
+            
+            </a>
+        </div>
+       
+
+        
+        <div class="history-bar">
+            <a href="./history.html">
+                <i class="fa-solid fa-clock-rotate-left" style="color: #e3e9f2;"></i>
+                <span style="color: beige;">History</span>
+            </a>
+        </div>
+        
+
+
+
+        <h2 style="margin: 15px; color: beige; padding: 2px; font-size: 25px;" >Explore</h2>
+
+        <div class="side-bar">
+            <div id="trending-container">
+                <a href="./trending.html">
+                    <i class="fa-solid fa-fire" style="color: #dfe4ec ; "></i>
+                    <span>Trending</span> 
+                </a>
+            </div>  
+        
+            <div id="music-container">
+                <a href="./music.html">
+                    <i class="fa-solid fa-music" style="color: #e8eaed;margin-bottom: 25px;"></i>
+                    <span>Music</span>
+                </a>
+            </div>
+            
+        </div>
+       
+    </aside>
+
+    <main>
+        
+    </main>
+    <script src="./project.js"></script>
+</body>
+</html>
