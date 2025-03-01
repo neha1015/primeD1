@@ -5765,7 +5765,7 @@ const getData = (text) => {
         const response = fetch(`https://youtube138.p.rapidapi.com/search/?q=${text}`, {
             method: "GET",
             headers: {
-               "x-rapidapi-key": "2381b6de75msh38cdbb75ca93b9ap17efa6jsn9067defcde22" , 
+               "x-rapidapi-key": "d00382a269msha87e0a195fd7d64p1a9c2fjsndeb258c0cfd7" , 
                 "x-rapidapi-host": "youtube138.p.rapidapi.com"
             }
         });
@@ -5803,8 +5803,18 @@ const showSearch = (data) => {
         }
     });
 };
-document.querySelector(".search-bar").addEventListener("input", (event) => {
-    getData(event.target.value);
-});
+// document.querySelector(".search-bar").addEventListener("input", (event) => {
+//     getData(event.target.value);
+// });
+
+let timeOutid=null;
+const handleSearch=(e)=>{
+    if(timeOutid){
+        clearTimeout(timeOutid);
+    }
+    timeOutid=setTimeout(()=>{
+    getData(e.target.value);
+},1000);
+};
 
 
