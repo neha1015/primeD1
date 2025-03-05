@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 6.25rem calc(100vh-6.25rem);
+    grid-template-columns: 10rem 1fr;
+}
+
+header{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* background-color: yellow; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+aside{
+    background-color: rgb(54, 59, 57);
+}
+
+main{
+    background-color: #d6d1db;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    gap: 2rem;
+    padding: 2rem;
+    align-content: center;
+
+}
+
+.card{
+    height: 200px;
+    background-color: rgb(233, 222, 201);
+}
